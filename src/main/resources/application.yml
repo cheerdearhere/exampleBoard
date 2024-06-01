@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: myboard2024
+  # view resolver
+  thymeleaf:
+    cache: false
+  # db specific properties
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cheer_db
+    username: 'user_testboard'
+    password: '1234'
+  # ORM s/w specific properties
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update
